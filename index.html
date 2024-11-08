@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+</head>
+<body>
+<!-- Y Optionsga tegishli -->
+<!--    <div id="app">-->
+<!--        <p>{{message}}</p>-->
+<!--        <button @click="updateMessage">Update Message</button>-->
+<!--        <button @click="messageBack">Message Back</button>-->
+<!--    </div>-->
+
+<!-- A Compositionga tegishli-->
+<!--<div id="app">-->
+<!--    <p>Contr: {{contr}}</p>-->
+<!--    <button @click="counter">Contr</button>-->
+<!--</div>-->
+
+<!--M SFC misol-->
+<template>
+    <div id="app">
+        <sfcExample />
+    </div>
+</template>
+
+<script>
+    // A Optionsga misol
+    // const app = Vue.createApp({
+    //     data(){
+    //         return{
+    //             message: "Nima bolyabdi!"
+    //         }
+    //     },
+    //     methods: {
+    //         updateMessage(){
+    //             this.message = "OOOOOOOO ulug' shaman!"
+    //         },
+    //         messageBack(){
+    //             this.message = "Oq balkim qora bolib chiqsachi😑"
+    //         }
+    //     }
+    // })
+    // app.mount("#app")
+
+    // K Compositionga misol
+    // const { createApp, ref } = Vue;
+    // const app = createApp({
+    //     setup() {
+    //         const contr = ref(0);
+    //         const counter = () => {
+    //             contr.value++;
+    //         };
+    //         return {
+    //             counter,
+    //             contr
+    //         };
+    //     }
+    // });
+    // app.mount("#app");
+
+    import sfcExample from "./sfcExample.vue";
+
+    export default {
+        components: {
+            sfcExample
+        }
+    };
+</script>
+
+
+</body>
+</html>
